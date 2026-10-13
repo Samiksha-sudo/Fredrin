@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samiksha Kad — About Me</title>
+  <meta name="description" content="About Samiksha Kad.">
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --card: #ffffff;
+      --text: #1f2328;
+      --muted: #5c6370;
+      --accent: #4f46e5;
+      --border: #e5e3dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14161a;
+        --card: #1c1f25;
+        --text: #e8e6e1;
+        --muted: #a0a6b0;
+        --accent: #8b85ff;
+        --border: #2c3038;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    .avatar {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+    }
+    h1 { margin: 1rem 0 0.25rem; font-size: 2.25rem; }
+    .tagline { margin: 0; color: var(--muted); font-size: 1.1rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 { margin-top: 0; font-size: 1.2rem; color: var(--accent); }
+    ul.tags {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    ul.tags li {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.25rem 0.85rem;
+      font-size: 0.95rem;
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 1rem; }
+    a { color: var(--accent); }
+    footer { text-align: center; color: var(--muted); font-size: 0.9rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="avatar" src="https://github.com/Samiksha-sudo.png" alt="Photo of Samiksha Kad">
+      <h1>Samiksha Kad</h1>
+      <!-- TODO: replace with your own tagline -->
+      <p class="tagline">Your one-line tagline goes here</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <!-- TODO: replace with your own bio -->
+      <p>
+        Write a short introduction here: who you are, what you do, and what you
+        care about. Two or three sentences is plenty.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills &amp; Interests</h2>
+      <!-- TODO: replace with your own skills and interests -->
+      <ul class="tags">
+        <li>Skill one</li>
+        <li>Skill two</li>
+        <li>Skill three</li>
+        <li>Interest one</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Find Me</h2>
+      <div class="links">
+        <a href="https://github.com/Samiksha-sudo">GitHub</a>
+        <!-- TODO: add or remove links as needed -->
+        <a href="mailto:you@example.com">Email</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>&copy; <span id="year">2026</span> Samiksha Kad</footer>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
